@@ -1,5 +1,6 @@
 from prettytable import PrettyTable
-
+# Pastikan untuk menginstal modul 'prettytable' jika belum terinstal
+# Command untuk install: pip install prettytable
 class State:
     def __init__(self, rule, dot_index, start, end, back_pointers, added_by, state_id=None):
         self.rule = rule  # (LHS, RHS)
@@ -134,8 +135,7 @@ class EarleyParser:
         else:
             print(f'\nInput string "{self.input_string}" tidak diterima oleh grammar.')
 
-# Pastikan untuk menginstal modul 'prettytable' jika belum terinstal
-# Anda dapat menginstalnya menggunakan: pip install prettytable
+
 
 # Definisikan grammar sebagai dictionary
 grammar = {
